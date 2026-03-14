@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<style>
+  .about-hero {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .about-hero h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #1e293b;
+  }
+
+  .about-hero p {
+    max-width: 750px;
+    margin: 0 auto;
+    color: #64748b;
+    font-size: 16px;
+  }
+
+  .about-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+  }
+
+  .about-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease;
+  }
+
+  .about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+  }
+
+  .about-card h3 {
+    margin-bottom: 15px;
+    color: #1e293b;
+  }
+
+  .about-card p {
+    color: #64748b;
+    font-size: 14px;
+  }
+
+  .mission-section {
+    margin-top: 70px;
+    padding: 40px;
+    background: #1e293b;
+    color: white;
+    border-radius: 12px;
+    text-align: center;
+  }
+
+  .mission-section h2 {
+    margin-bottom: 15px;
+  }
+
+  .mission-section p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #cbd5e1;
+  }
+</style>
+
+<div class="about-hero">
+  <h1>About Django LMS</h1>
+  <p>
+    Django LMS is a modern Learning Management System built to help students
+    and professionals gain practical skills in web development and programming.
+    Our platform focuses on structured learning and real-world projects.
+  </p>
+</div>
+
+<div class="about-section">
+
+  <div class="about-card">
+    <h3>Our Vision</h3>
+    <p>
+      To create an accessible and affordable platform where anyone can learn
+      modern technology skills and grow their career.
+    </p>
+  </div>
+
+  <div class="about-card">
+    <h3>Our Approach</h3>
+    <p>
+      We combine structured lessons, practical projects, and clear explanations
+      to make learning simple and effective.
+    </p>
+  </div>
+
+  <div class="about-card">
+    <h3>Why Choose Us?</h3>
+    <p>
+      Professional content, easy-to-follow curriculum, and continuous updates
+      to keep you aligned with industry standards.
+    </p>
+  </div>
+
+</div>
+
+<div class="mission-section">
+  <h2>Our Mission</h2>
+  <p>
+    Empower learners worldwide with high-quality education in programming,
+    web development, and modern software technologies.
+  </p>
+</div>
+
+{% endblock %}

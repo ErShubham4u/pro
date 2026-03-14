@@ -1,0 +1,115 @@
+
+
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+<style>
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #1e293b;
+  }
+
+  .hero p {
+    font-size: 18px;
+    max-width: 700px;
+    margin-bottom: 30px;
+    color: #64748b;
+  }
+
+  .hero-buttons a {
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    margin: 10px;
+    font-weight: 500;
+    transition: 0.3s ease;
+  }
+
+  .btn-primary {
+    background-color: #3b82f6;
+    color: white;
+  }
+
+  .btn-primary:hover {
+    background-color: #2563eb;
+  }
+
+  .btn-secondary {
+    background-color: #e2e8f0;
+    color: #1e293b;
+  }
+
+  .btn-secondary:hover {
+    background-color: #cbd5e1;
+  }
+
+  .features {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+
+  .feature-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    text-align: center;
+  }
+
+  .feature-card h3 {
+    margin-bottom: 15px;
+    color: #1e293b;
+  }
+
+  .feature-card p {
+    color: #64748b;
+    font-size: 15px;
+  }
+</style>
+
+<div class="hero">
+  <h1>Upgrade Your Skills with Django LMS</h1>
+  <p>
+    Learn modern web development, programming, and software engineering
+    through structured courses designed to help you succeed.
+  </p>
+
+  <div class="hero-buttons">
+    <a href="/course/" class="btn-primary">Browse Courses</a>
+    <a href="/signup/" class="btn-secondary">Get Started</a>
+  </div>
+</div>
+
+<div class="features">
+  <div class="feature-card">
+    <h3>Expert Instructors</h3>
+    <p>Learn from experienced developers and industry professionals.</p>
+  </div>
+
+  <div class="feature-card">
+    <h3>Structured Learning</h3>
+    <p>Step-by-step courses designed for beginners to advanced learners.</p>
+  </div>
+
+  <div class="feature-card">
+    <h3>Track Progress</h3>
+    <p>Monitor your learning journey and achieve your goals faster.</p>
+  </div>
+</div>
+
+{% endblock %}
+
+
